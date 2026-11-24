@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portfoliolens"
+version = "0.1.0"
+description = "A reproducible portfolio review prototype for financial analysts"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.3.5", "pandas==2.3.3", "scipy==1.16.3", "matplotlib==3.10.7"]
+
+[project.optional-dependencies]
+market = ["yfinance==0.2.66"]
+dev = ["pytest==9.0.1", "nbformat==5.10.4", "nbclient==0.10.2", "ipykernel==7.1.0"]
+
+[project.scripts]
+portfoliolens = "portfoliolens.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["portfoliolens*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

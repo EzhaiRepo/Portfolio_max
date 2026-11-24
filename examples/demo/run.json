@@ -1,0 +1,66 @@
+{
+  "source": "SYNTHETIC DEMO - simulated prices, not historical market results",
+  "price_sha256": "01f04e0e48dc50bf1f524cf99ec497af95357eb53d87696b4abb45b9e1caf755",
+  "config": {
+    "lookback": 252,
+    "max_weight": 0.5,
+    "cost_bps": 10,
+    "annual_rf": 0.04,
+    "benchmark": "SPY"
+  },
+  "holdings": {
+    "AVGO": 0.184,
+    "ETN": 0.126,
+    "PGR": 0.69
+  },
+  "observations": 756,
+  "training_end": "2022-12-21",
+  "evaluation_start": "2022-12-22",
+  "evaluation_end": "2025-11-13",
+  "metrics": {
+    "SPY": {
+      "Total return": 1.5490328244,
+      "Annualized geometric return": 0.3660244604,
+      "Annualized volatility": 0.1528261064,
+      "Maximum drawdown": -0.1283829182,
+      "Sharpe ratio": 1.861769807,
+      "Information ratio": null,
+      "Beta": 1.0,
+      "Gross traded notional / NAV (sum)": 1.0,
+      "Cost fractions (sum)": 0.001
+    },
+    "Current allocation": {
+      "Total return": 1.2757898087,
+      "Annualized geometric return": 0.315358239,
+      "Annualized volatility": 0.143895156,
+      "Maximum drawdown": -0.1576188737,
+      "Sharpe ratio": 1.7051855295,
+      "Information ratio": -0.3237967114,
+      "Beta": 0.6301600863,
+      "Gross traded notional / NAV (sum)": 2.1825826117,
+      "Cost fractions (sum)": 0.0021825826
+    },
+    "Equal weight": {
+      "Total return": 1.983992965,
+      "Annualized geometric return": 0.4396798679,
+      "Annualized volatility": 0.1872238526,
+      "Maximum drawdown": -0.1555349206,
+      "Sharpe ratio": 1.8318010957,
+      "Information ratio": 0.4518247239,
+      "Beta": 0.892390266,
+      "Gross traded notional / NAV (sum)": 2.5509708854,
+      "Cost fractions (sum)": 0.0025509709
+    },
+    "Capped min variance": {
+      "Total return": 1.3390615981,
+      "Annualized geometric return": 0.327436901,
+      "Annualized volatility": 0.1545137958,
+      "Maximum drawdown": -0.1365603066,
+      "Sharpe ratio": 1.6574505958,
+      "Information ratio": -0.2566458578,
+      "Beta": 0.7484402328,
+      "Gross traded notional / NAV (sum)": 2.418305575,
+      "Cost fractions (sum)": 0.0024183056
+    }
+  }
+}
